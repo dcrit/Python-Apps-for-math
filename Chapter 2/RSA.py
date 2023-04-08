@@ -30,15 +30,15 @@ print("Private key: " + str({d, n}))
  
 # plain text
 msg = 11
-print(f'Original message:{msg}')
+print("Original message: " + str({msg}))
  
 # encryption
 C = pow(msg, e)
 C = math.fmod(C, n)
-print(f'Encrypted message: {C}')
+print("Encrypted message: " + str({C}))
  
 # decryption
 M = pow(C, d)
 M = math.fmod(M, n)
  
-print(f'Decrypted message: {M}')
+print("Decrypted message: " + str({M}))
